@@ -7,7 +7,5 @@ import {
     MOLA_COMPONENT_LEVEL_FIXED
 } from 'mola';
 
-export default {
-    level: MOLA_COMPONENT_LEVEL_FIXED,
-    type: 'ScrollTip'
-};
+export const level = MOLA_COMPONENT_LEVEL_FIXED;
+export const type = 'ScrollTip';
