@@ -1,0 +1,33 @@
+@require 'mola/lib/component/func.styl'
+
+.mola-scroll-tip
+    display: none
+    position: absolute
+    background-size: 100%
+    background-repeat: no-repeat
+    position: fixed
+    left: 0
+    bottom: 0
+    right: 0
+    text-align: center
+
+    &.state-show
+        display: block
+
+    > p
+        position: relative
+        line-height: 1
+        padding: pxTo6pRem(6) 0
+        box-sizing: border-box
+        display: inline-block
+
+        > i
+            width: 0
+            height: 0
+            border-left: pxTo6pRem(28) solid transparent
+            border-right: pxTo6pRem(28) solid transparent
+            border-top: pxTo6pRem(28) solid #000
+            position: absolute
+            top: 100%
+            left: 50%
+            transform: translate3d(-50%, 0, 0) scale(1, 3 / 4)

@@ -1,0 +1,42 @@
+{
+    "name": "mola-scroll-tip",
+    "description": "mola scroll tip",
+    "main": [
+        "lib/ScrollTip.js",
+        "lib/ScrollTip.styl"
+    ],
+    "authors": [
+        "cxtom <cxtom2008@gmail.com>"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "react",
+        "mola",
+        "video"
+    ],
+    "moduleTypes": "umd",
+    "homepage": "https://github.com/cxtom/mola-scroll-tip",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "**/*.log",
+        ".DS_Store",
+        "test",
+        "tests",
+        "src",
+        "example",
+        "tools"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cxtom/mola-scroll-tip"
+    },
+    "dependencies": {
+        "classnames": "^2.2.5",
+        "mola": "^1.0.0",
+        "react": "^0.14.8",
+        "react-dom": "^0.14.8"
+    },
+    "version": "1.0.0"
+}
