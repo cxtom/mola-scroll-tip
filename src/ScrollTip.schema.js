@@ -4,7 +4,6 @@
  */
 
 import update from 'react-addons-update';
-import './ScrollTip';
 
 export {type, level} from './constants';
 
