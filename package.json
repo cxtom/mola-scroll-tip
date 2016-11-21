@@ -1,6 +1,6 @@
 {
   "name": "mola-scroll-tip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A mola component",
   "main": "lib/ScrollTip.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "classnames": "^2.2.5",
     "mola": "^1.0.0",
     "react": "^0.14.8",
+    "react-addons-update": "^0.14.8",
     "react-dom": "^0.14.8"
   },
   "devDependencies": {

@@ -16,7 +16,7 @@ document.getElementsByTagName('html')[0].style['font-size'] = getRootFontSize(do
 ReactDOM.render(
     <div id="wrapper">
         <p>haaaaaa</p>
-        <ScrollTip color="#333" />
+        <ScrollTip clickScroll color="#333" />
     </div>,
     document.getElementById('app')
 );
