@@ -50,7 +50,7 @@ const DEFAULT_SCHEMA = {
             'default': false
         }
     },
-    required: ['color', 'height', 'text', 'fontSize', 'click']
+    required: ['color', 'height', 'text', 'fontSize']
 };
 
 export default function (props) {
