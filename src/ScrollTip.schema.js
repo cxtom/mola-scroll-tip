@@ -25,13 +25,17 @@ const DEFAULT_SCHEMA = {
     properties: {
         height: {
             'title': '高度',
-            'type': 'number',
-            'default': 50
+            'type': 'string',
+            'format': 'numeric',
+            'formatMinimum': '0',
+            'default': '50'
         },
         fontSize: {
             'title': '字体大小',
-            'type': 'number',
-            'default': 14
+            'type': 'string',
+            'format': 'numeric',
+            'formatMinimum': '12',
+            'default': '14'
         },
         color: {
             type: 'string',
@@ -61,9 +65,10 @@ export default function (props) {
                 $merge: {
                     distance: {
                         'title': '滑动距离',
-                        'type': 'number',
-                        'default': 200,
-                        'min': 100
+                        'type': 'string',
+                        'format': 'numeric',
+                        'formatMinimum': '100',
+                        'default': '200'
                     }
                 }
             },

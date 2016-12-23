@@ -128,7 +128,7 @@ export class ScrollTip extends Component {
                 style={{
                     ...style,
                     color,
-                    fontSize,
+                    fontSize: `${fontSize}px`,
                     height: px2rem(height),
                     lineHeight: px2rem(height)
                 }}>
@@ -145,20 +145,20 @@ export class ScrollTip extends Component {
 ScrollTip.displayName = type;
 
 ScrollTip.propTypes = {
-    height: PropTypes.number.isRequired,
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
     color: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    fontSize: PropTypes.number.isRequired,
+    fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
     clickScroll: PropTypes.bool.isRequired
 };
 
 ScrollTip.defaultProps = {
     color: '#fff',
     text: '滑动查看',
-    height: 50,
-    fontSize: 14,
+    height: '50',
+    fontSize: '14',
     clickScroll: false,
-    distance: 200
+    distance: '200'
 };
 
 export default registerComponent(type, level)(ScrollTip);
