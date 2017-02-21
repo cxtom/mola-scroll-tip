@@ -24,12 +24,16 @@ function easeInOutQuad(t, b, c, d) {
     return -c / 2 * (t * (t - 2) - 1) + b;
 }
 
-const raf = window ? (window.requestAnimationFrame
-    || window.webkitRequestAnimationFrame
-    || window.mozRequestAnimationFrame
-    || function (callback) {
-        window.setTimeout(callback.bind(null, Date.now()), 1000 / 60);
-    }) : function () {};
+const raf = typeof window !== 'undefined'
+    ? (
+        window.requestAnimationFrame
+        || window.webkitRequestAnimationFrame
+        || window.mozRequestAnimationFrame
+        || function (callback) {
+            setTimeout(callback.bind(null, Date.now()), 1000 / 60);
+        }
+    )
+    : function () {};
 
 export class ScrollTip extends Component {
 
